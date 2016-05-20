@@ -90,6 +90,7 @@ public class AndroidClientCodegen extends DefaultCodegen implements CodegenConfi
                 .defaultValue(Boolean.TRUE.toString()));
 
         supportedLibraries.put("volley", "HTTP client: Volley 1.0.19 (default)");
+        supportedLibraries.put("custom", "Custom template implementation");
         supportedLibraries.put("httpclient", "HTTP client: Apache HttpClient 4.3.6. JSON processing: Gson 2.3.1. IMPORTANT: Android client using HttpClient is not actively maintained and will be depecreated in the next major release.");
         CliOption library = new CliOption(CodegenConstants.LIBRARY, "library template (sub-template) to use");
         library.setEnum(supportedLibraries);
