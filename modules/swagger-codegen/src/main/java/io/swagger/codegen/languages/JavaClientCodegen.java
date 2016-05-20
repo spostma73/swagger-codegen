@@ -68,7 +68,7 @@ public class JavaClientCodegen extends DefaultCodegen implements CodegenConfig {
                 "ApiClient", "ApiException", "ApiResponse", "Configuration", "StringUtil",
 
                 // language reserved words
-                "abstract", "continue", "for", "new", "switch", "assert",
+                "abstract", "continue", "for",n "new", "switch", "assert",
                 "default", "if", "package", "synchronized", "boolean", "do", "goto", "private",
                 "this", "break", "double", "implements", "protected", "throw", "byte", "else",
                 "import", "public", "throws", "case", "enum", "instanceof", "return", "transient",
@@ -111,6 +111,7 @@ public class JavaClientCodegen extends DefaultCodegen implements CodegenConfig {
         cliOptions.add(new CliOption("hideGenerationTimestamp", "hides the timestamp when files were generated"));
 
         supportedLibraries.put(DEFAULT_LIBRARY, "HTTP client: Jersey client 1.19.1. JSON processing: Jackson 2.7.0");
+        supportedLibraries.put("custom", "Custom template implementation");
         supportedLibraries.put("feign", "HTTP client: Netflix Feign 8.16.0. JSON processing: Jackson 2.7.0");
         supportedLibraries.put("jersey2", "HTTP client: Jersey client 2.22.2. JSON processing: Jackson 2.7.0");
         supportedLibraries.put("okhttp-gson", "HTTP client: OkHttp 2.7.5. JSON processing: Gson 2.6.2");
