@@ -38,6 +38,7 @@ public class SpringMVCServerCodegen extends JavaClientCodegen implements Codegen
 
         supportedLibraries.clear();
         supportedLibraries.put(DEFAULT_LIBRARY, "Default Spring MVC server stub.");
+        supportedLibraries.put("custom", "Custom template implementation");
         supportedLibraries.put("j8-async", "Use async servlet feature and Java 8's default interface. Generating interface with service " +
                 "declaration is useful when using Maven plugin. Just provide a implementation with @Controller to instantiate service.");
     }
